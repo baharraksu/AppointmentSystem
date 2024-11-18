@@ -1,0 +1,77 @@
+/* style.css */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Navbar Stilleri */
+.navbar {
+  margin-bottom: 30px;
+  background-color: rgba(52, 58, 64, 0.8); /* Şeffaf arka plan */
+  backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+  transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff; /* Mavi renk hover efekti */
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Menü açma ikonunu beyaz yap */
+}
+
+/* Kart Stilleri */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+select {
+  pointer-events: auto !important;
+  z-index: 10;
+}
+
+/* Footer Stilleri */
+footer {
+  margin-top: 50px;
+  background-color: #343a40;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 17px;
+}
