@@ -1,16 +1,14 @@
 <?php
-// db_con.php
-
 // Veritabanı bağlantı bilgileri
 $servername = "localhost";
 $username = "root";
-$password = "1qaz";
+$password = "1qaz";  // Şifrenizi burada uygun şekilde girin
 $dbname = "kuafor_randevu_sistemi";
 
-// Bağlantı kurma
+// Bağlantıyı oluştur
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Bağlantıyı kontrol et
 if (!$conn) {
-    die("Bağlantı başarısız: " . mysqli_connect_error());
+    die("Veritabanı bağlantısı başarısız: " . mysqli_connect_error());
 }
